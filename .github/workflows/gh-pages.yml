@@ -23,6 +23,9 @@ jobs:
           hugo-version: '0.127.0'
           extended: true
 
+      - name: Install NPM modules
+        run: npm install postcss-cli
+
       - name: Build
         run: npm run build:production
 
