@@ -2,7 +2,7 @@
 title: Bayme.sh Home
 ---
 
-{{< blocks/cover title="Bayme.sh - Meshtastic Bay Area Group" image_anchor="top" height="full" >}}
+{{< blocks/cover title="Bayme.sh - Meshtastic Bay Area Group!" image_anchor="top" height="full" >}}
 <a class="btn btn-lg btn-primary me-3 mb-4" href="/docs/">
   Learn More <i class="fas fa-arrow-alt-circle-right ms-2"></i>
 </a>
