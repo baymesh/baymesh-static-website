@@ -1,6 +1,6 @@
 ---
 title: Map
-menu: {main: {weight: 40}}
+menu: {main: {weight: 30}}
 ---
 <!-- Remember to refresh this map from time to time -->
 

@@ -3,6 +3,7 @@ title: Weekly Net
 description: >
   We meet regularly, how to participate
 weight: 30
+tags: [Gathering, Events]
 ---
 
 {{% pageinfo %}}

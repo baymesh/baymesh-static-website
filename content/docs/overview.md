@@ -1,7 +1,8 @@
 ---
 title: Overview
-description: this is a description
+description: A quick overview over what meshtastic is and how it works
 weight: 10
+tags: [Overview]
 ---
 
 {{% pageinfo %}}

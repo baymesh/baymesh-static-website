@@ -1,8 +1,8 @@
 ---
 title: Meshtastic Basics
 description: A more detailed breakdown of meshtastic as told by ChatGPT
-categories: [Examples, Placeholders]
-tags: [test, docs]
+# categories: [Examples, Placeholders]
+tags: [Basics, How it works, Newbie]
 ---
 
 {{% pageinfo %}}

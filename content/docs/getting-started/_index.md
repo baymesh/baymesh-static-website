@@ -1,8 +1,8 @@
 ---
 title: Getting Started
-description: Description
-categories: [Examples, Placeholders]
-tags: [test, docs]
+description: If you've never used Meshtastic before this is a great place to start
+# categories: [Examples, Placeholders]
+tags: [Newbie, Config Settings, Client Config, MQTT]
 weight: 20
 ---
 

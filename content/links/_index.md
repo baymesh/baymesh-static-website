@@ -1,6 +1,6 @@
 ---
 title: Links
-menu: {main: {weight: 50}}
+menu: {main: {weight: 40}}
 ---
 
 {{% blocks/section type="row" color="light"%}}

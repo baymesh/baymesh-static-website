@@ -21,7 +21,7 @@ enableGitInfo: false
 # You can add your own taxonomies
 taxonomies:
   tag: tags
-  category: categories
+  #category: categories
 
 # Highlighting config
 pygmentsCodeFences: true
@@ -75,13 +75,13 @@ outputs:
 params:
   taxonomy:
     # set taxonomyCloud = [] to hide taxonomy clouds
-    taxonomyCloud: [tags, categories]
+    taxonomyCloud: [tags]
 
     # If used, must have same length as taxonomyCloud
-    taxonomyCloudTitle: [Tag Cloud, Categories]
+    taxonomyCloudTitle: [Tag Cloud]
 
     # set taxonomyPageHeader = [] to hide taxonomies on the page headers
-    taxonomyPageHeader: [tags, categories]
+    taxonomyPageHeader: [tags]
 
   # privacy_policy: https://policies.google.com/privacy
 
