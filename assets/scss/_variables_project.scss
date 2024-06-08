@@ -4,3 +4,9 @@ Add styles or override variables from the theme here.
 
 */
 
+@media (max-width: 576px) {
+    .big-ol-mobile-btn {
+      font-size: 3rem !important; /* Adjust as needed */
+      padding: 1rem 1.5rem !important; /* Adjust as needed */
+    }
+  }

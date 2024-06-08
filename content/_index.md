@@ -2,20 +2,24 @@
 title: Bayme.sh Home
 ---
 
-{{< blocks/cover title="Bayme.sh - Meshtastic Bay Area Group" image_anchor="top" height="full" >}}
-<a class="btn btn-lg btn-primary me-3 mb-4" style="background-color: #7289da; border-color: #7289da; color: white;" href="https://discord.gg/GpsKbhGJx5">
-  Join Discord <i class="fab fa-discord ms-2 "></i>
+{{< blocks/cover title="Meshtastic Bay Area Group" image_anchor="top" height="full" >}}
+
+<a class="btn btn-lg btn-primary me-3 mb-4 text-nowrap big-ol-mobile-btn " style="background-color: #7289da; border-color: #7289da;" href="https://discord.gg/GpsKbhGJx5">
+  Join Our Discord <i class="fab fa-discord ms-2 "></i>
 </a>
-<a class="btn btn-lg btn-primary me-3 mb-4" href="/docs/">
+
+<a class="btn btn-lg btn-primary me-3 mb-4 text-nowrap" href="/docs/">
   Learn More <i class="fas fa-arrow-alt-circle-right ms-2"></i>
 </a>
-<a class="btn btn-lg btn-primary me-3 mb-4" style="background-color: #67ea94; border-color: #67ea94; color: #000000;" href="https://meshtastic.org/"> 
+
+<a class="btn btn-lg btn-primary me-3 mb-4 text-nowrap" style="background-color: #67ea94; border-color: #67ea94; color: #000000;" href="https://meshtastic.org/"> 
   Meshtastic.org <img src="/Mesh_Logo_Black.svg" class="ms-2" alt="Meshtastic" width="24" height="24">
 </a>
+
 <p class="lead mt-5">Connecting the Bay Area, One Node at a Time</p>
+
 {{< blocks/link-down color="info" >}}
 {{< /blocks/cover >}}
-
 
 {{% blocks/section color="primary" %}}
 ## What is the Bay Mesh?
