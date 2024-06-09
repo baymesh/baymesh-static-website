@@ -6,16 +6,18 @@ Add styles or override variables from the theme here.
 
 @media (max-width: 576px) {
     .big-ol-mobile-btn {
-      font-size: 2rem !important; /* Adjust as needed */
-      padding: 1rem 1rem !important; /* Adjust as needed */
-      width: 100% !important; /* Adjust as needed */
+      font-size: 2rem !important; 
+      font-weight: 900 !important; 
+      padding: 1rem 1rem !important; 
+      width: 100% !important; 
     }
   }
 
 @media (max-width: 430px) {
     .big-ol-mobile-btn {
-      font-size: 1.3rem !important; /* Adjust as needed */
-      padding: 1rem 1rem !important; /* Adjust as needed */
-      width: 100% !important; /* Adjust as needed */
+      font-size: 1.5rem !important; 
+      font-weight: 700 !important; 
+      padding: 1rem 1rem !important; 
+      width: 100% !important; 
     }
   }
