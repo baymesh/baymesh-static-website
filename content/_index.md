@@ -49,3 +49,4 @@ Meshtastic is an open-source, decentralized, off-grid mesh network. It's made up
 ## Join the [Baymesh Discord](https://discord.gg/GpsKbhGJx5)
 
 {{% /blocks/section %}}
+
