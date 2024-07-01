@@ -21,3 +21,22 @@ Add styles or override variables from the theme here.
       width: 100% !important; 
     }
   }
+
+.logger-block {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 0px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.logger-block p {
+  margin-bottom: auto; /* Pushes the paragraph to the top */
+  padding-bottom: 10px;
+}
+.logger-block small {
+  align-self: flex-end; /* Aligns the small text to the bottom */
+}

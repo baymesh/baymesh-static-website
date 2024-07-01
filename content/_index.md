@@ -50,3 +50,10 @@ Meshtastic is an open-source, decentralized, off-grid mesh network. It's made up
 
 {{% /blocks/section %}}
 
+{{% blocks/section %}}
+### What's [on the air]({{< ref "public-data" >}}) today?
+<div class="row" id="logger-container" style="padding-top: 15px;">
+    <!-- Data blocks will be appended here -->
+</div>
+<script src="/logger.js"></script>
+{{% /blocks/section %}}
