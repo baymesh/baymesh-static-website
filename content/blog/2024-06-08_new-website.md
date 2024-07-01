@@ -11,11 +11,11 @@ We are excited to announce the launch of our brand-new Meshtastic Bay Area websi
 - **User-Friendly Design:** Our website features a clean, intuitive layout, making it easy to navigate and find the information you need.
 - **Comprehensive Documentation:** Explore our detailed guides and resources, including getting started with Meshtastic, recommended hardware, and tips for effective mesh communication.
 - **Active Community Engagement:** Stay updated with the latest news and events, join our weekly net meetings, and participate in our community discussions.
-- **Feedback and Contributions:** We value your input! The website is an open project, and we encourage contributions from everyone. You can provide feedback or suggest improvements via pull requests or issues on our [GitHub repository](https://github.com/baymesh/baymesh.github.io).
+- **Feedback and Contributions:** We value your input! The website is an open project, and we encourage contributions from everyone. You can provide feedback or suggest improvements via pull requests or issues on our [GitHub repository](https://github.com/baymesh/baymesh-static-website).
 
 #### How to Get Involved:
 - **Join Our Discord:** Connect with fellow enthusiasts in real-time by joining our Discord server. We have dedicated channels for different topics and a welcoming community ready to help.
-- **Contribute to the Website:** Whether you’re a developer, writer, or just passionate about mesh networks, your contributions are welcome. Visit our [GitHub repository](https://github.com/baymesh/baymesh.github.io) to get started.
+- **Contribute to the Website:** Whether you’re a developer, writer, or just passionate about mesh networks, your contributions are welcome. Visit our [GitHub repository](https://github.com/baymesh/baymesh-static-website) to get started.
 - **Share Your Thoughts:** Have ideas for new features or improvements? Leave your comments in our dedicated [Discord thread](https://discord.com/channels/1215705285159817236/1248718979393126453).
 
 Our goal is to create a dynamic, community-driven platform that supports learning, innovation, and collaboration. We believe that with your help, we can make the Meshtastic Bay Area community even stronger and more vibrant.
