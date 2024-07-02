@@ -21,3 +21,11 @@ Add styles or override variables from the theme here.
       width: 100% !important; 
     }
   }
+
+button.carousel-control {
+  filter: invert(1);
+}
+
+.td-content > p {
+  max-width: 95% !important;
+}

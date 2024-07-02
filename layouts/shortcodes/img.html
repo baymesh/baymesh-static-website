@@ -1,0 +1,13 @@
+{{ $src := .Get "src" }}
+{{ $page := .Page }}
+{{ $imageResource := $page.Resources.GetMatch $src }}
+{{ $mobile := $imageResource.Fit "1200x1200 q80" }}
+
+{{ if eq (.Get "s" ) "left" }}
+<div class="img-fluid float-start" style="max-width: 300px; margin-right:10px; font-size: smaller; text-align: center;">
+{{ else }}
+<div class="img-fluid float-end" style="max-width: 300px; margin-left:10px; font-size: smaller; text-align: center;">
+{{ end }}
+<img src="{{ $mobile.RelPermalink }}" class="rounded" style="max-width: 300px; max-height: 300px; display:block; margin: auto;"
+   alt="{{ .Get "a" }}" /><div class="rounded" style="background-color: var(--bs-secondary-bg)">{{ .Get "c" | markdownify }}</div>
+</div>

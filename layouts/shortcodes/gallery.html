@@ -1,0 +1,25 @@
+<style>
+  .image-gallery {overflow: auto; margin-left: -1%!important;}
+  .image-gallery li {float: left; display: block; margin: 0 0 1% 1%; width: 19%;}
+  .image-gallery li a {text-align: center; text-decoration: none!important; color: #777;}
+  .image-gallery li a span {display: block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; padding: 3px 0;}
+  .image-gallery li a img {width: 100%; display: block;}
+</style>
+
+<div style="clear: both;"><br><br></div>
+<ul class="image-gallery">
+{{ $page := .Page }}
+{{ $dir := .Page.File.Dir }}
+{{ $galleryDir := path.Join "content" $dir "gallery" }}
+{{ range readDir $galleryDir }}
+  {{ $im := $page.Resources.GetMatch (printf "gallery/%s" .Name) }}
+  {{- $imagetitle := index (split .Name ".") 0 -}}
+  <li>
+    <a href="{{ ($im.Fit "1600x1600 q50").Permalink }}" title="{{ $imagetitle }}" data-toggle="lightbox" class="lightbox-image" data-gallery="the-gallery">
+      <img src="{{ ($im.Fill "300x300 q50").Permalink }}" title="{{ $imagetitle }}" alt="{{ $imagetitle }}" class="rounded" class="img-fluid" data-caption="{{ $imagetitle }}">
+      <span>{{ $imagetitle }}</span>
+    </a>
+  </li>
+
+{{ end }}
+</ul>
