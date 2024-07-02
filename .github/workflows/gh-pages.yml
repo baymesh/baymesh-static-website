@@ -19,6 +19,13 @@ jobs:
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          lfs: true # Fetch large files
+
+      - name: ❌ Turn off LFS
+        run: >-
+          git lfs uninstall;
+          rm -Rf .git;
+          rm .gitattributes;
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
