@@ -1,6 +1,7 @@
 ---
 title: OpenSauce 2024 Retrospective
 date: 2024-07-01
+images: ["IMG_0939.jpg"]
 ---
 
 {{< img src="IMG_0939.jpg" s="right" c="The Meshtastic Booth">}}
