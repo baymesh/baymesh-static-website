@@ -22,4 +22,4 @@ Finally, A few more pictures from the event along with an [amazing youtube short
 
 {{< gallery >}}
 
-The Meshtastic Bay Area Teama
+The Meshtastic Bay Area Team
