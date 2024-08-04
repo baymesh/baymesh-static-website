@@ -4,7 +4,9 @@ description: A few more details about MQTT specifically
 tags: [Newbies, MQTT]
 ---
 {{% pageinfo %}}
-This is on the most advanced side of things. If you don't know what "MQTT" is, leave it disabled.
+This is on the most advanced side of things. If you don't know what "MQTT" is, leave it disabled. You do not need to turn MQTT to have your messages on the logger.
+
+This is also only useful on "base station" nodes. Ones that are in a good position to pick up messages AND with a stable internet/wifi connection. 
 {{% /pageinfo %}}
 
 MQTT is the technology used to feed the mesh data to the internet (aka what powers the Mesh Maps, Discord Logger, etc). Setting up MQTT is totally optional and should only be done on a staticly installed node with strong and reliable internet access (like a node on your roof). If you are just using a portable node, you do not need to take any actions.

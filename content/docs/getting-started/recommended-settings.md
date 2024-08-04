@@ -4,13 +4,14 @@ description: We have some sane default settings that we strongly recommend you f
 tags: [Newbie, Config Settings, Client Config, MQTT]
 ---
 
+Please make sure to update the firmware on your device as you get started. The easiest way to do that is to use [the Web Flasher](https://flasher.meshtastic.org/). The latest stable release, even if labeled Beta, is generally a very safe option. 
 
-In the Bay Area, we have a few recommendations for configuration
+In the Bay Area, we have a few recommendations for configuration:
 
 * LORA
     * Set region to United States (US)
     * **Preset**: Long Range - Fast (Default)
-    * **Number of hops**: 3 (Default)
+    * **Number of hops**: 3 (Default) - Please don't turn this up.
     * Set Ignore MQTT to true to avoid forwarding MQTT traffic
 * Channels
     * 0 Primary Channel
@@ -23,9 +24,14 @@ In the Bay Area, we have a few recommendations for configuration
     * **Licensed Operator**: Do not enable unless you are a licensed [Amateur Radio operators](https://en.wikipedia.org/wiki/Amateur_radio) and have read [Licensed Operations]({{< ref "/docs/licensed-operations" >}}).
 * Device Config
     * **Device Role**
-        * Client - Recommended for base stations and handheld use. Will relay messages it receives.
-        * Client Mute - for use on devices that you do not want to populate the network (like a third node at your house). Will not relay messages.
-        * Client Router / Router - Use a router ONLY if you have a powerful and permanently installed node that can see a large amount of area. Not something to             be used on a base station at home.
+        * Client Mute - Best for vehicles and anytime you have more than 2 nodes in the same place. It will not relay messages.
+        * Client - Recommended for a home "base stations" or your single primary node. It will relay messages it receives.
+        * Router / Repeater - Don't use this to get started. There are a lot of considerations, and caveats, to using the offical Router & Repeater roles. Remember: The Client role relays messages just fine.
         * See [offical docs for full breakdown](https://meshtastic.org/docs/configuration/radio/device/)
-* MQTT
-    * If you want to be internet-connected, see [MQTT](MQTT)
+* Module Configuration
+    * MQTT
+        * If you want to be internet-connected, see [MQTT](MQTT) - But this is for fixed position nodes, typically at home.
+    * Device Telemetry
+        * Device Metrics: 1 hour.
+        * Sensor Metrics: 1 hour.
+
