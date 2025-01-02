@@ -6,47 +6,31 @@ tags: [Newbie, Hardware]
 
 See also [Discord #resources thread](https://discord.com/channels/1215705285159817236/1239383881698902036/1239393319566442596)
 
+## [SeeedStudio Tracker T1000-E](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html)
+The T1000-E by SeeedStudio is one of the few “ready to go” out of the box nodes available with a ~2 day battery life and integrated GPS. It is IP65 and approximately the size of a credit card (but thicker). These features and its low cost make it an excellent starter unit for first time Meshtastic users.
+
+* Pros
+    * Long battery life (2+ days)
+    * GPS & Battery Included
+    * ~$40 USD
+    * IP65 case
+* Cons
+    * No support for external antenna
+
 ## [Rak Wisblock](https://store.rokland.com/products/rak-wireless-wisblock-meshtastic-starter-kit?ref=bayMesh)
+The WisBlock is the “Lego” of Meshtastic nodes. It has dozens of possible configurations and optional extras. It’s extremely versatile and low power, leading to its popularity as everything from hand-held nodes (such as the WisMesh Pocket and Muzi Works R1) to solar powered base stations.
+
 * Pros
     * Low power usage
     * Modular (Can easily add on gps and sensors)
     * Dedicated solar input
 * Cons
     * Requires assembly
-* Order from
-    * Rak Wireless
-    * Rokland
-    * Etsy
-    * Amazon
 
-## [T Beam](https://store.rokland.com/products/lilygo-ttgo-meshtastic-t-beam-v1-1-esp32-lora-915-mhz-wireless-module-wifi-gps-neo-6m-with-oled-display-soldered-for-arduino-q349?ref=bayMesh)
-* Pros
-    * Fully built with display and gps (except battery and case)
-    * Reliable
-    * Somewhat cheap
-* Cons
-    * High power usage
-    * Weird antenna placement
-* Order from
-    * Lilygo
-    * Rokland
-    * Etsy
-    * Amazon
+## [WisMesh Pocket](https://store.rokland.com/products/wismesh-pocket?ref=bayMesh)
 
-## [TTGo Lora](https://store.rokland.com/products/lilygo-ttgo-lora32-v2-1_1-6-version-915mhz-esp32-lora-oled-0-96-inch-sd-card-bluetooth-wifi-wireless-module-esp-32-sma-q211?ref=bayMesh)
-* Pros
-    * Small form factor
-    * Cheap
-    * Already attached display and built in wifi and ble antenna
-* Cons
-    * No gps
-    * High battery usage
-* Order from
-    * Lilygo
-    * Rokland
-    * Amazon
+The WisMesh Pocket utilizes the power-saving nRF52-series SOC and OLED display and large battery for long life. With an included external antenna, this unit is “ready to go” out of the box but has the potential for upgrades
 
-## [Wis Mesh](https://store.rokland.com/products/wismesh-pocket?ref=bayMesh)
 * Pros
     * battery efficient
     * Integrated gps
@@ -54,6 +38,16 @@ See also [Discord #resources thread](https://discord.com/channels/12157052851598
     * Fully built with case
 * Cons
     * A bit expensive
-* Order from
-    * Rak Wireless
-    * Rokland
+
+
+## [B&Q Station G2](https://www.tindie.com/products/neilhao/meshtastic-mesh-device-station-g2/)
+
+B&Q Consulting handcrafts specialized hardware designed specifically with Meshtastic in mind. The Station G2 is designed to be more sensitive than most other nodes, making for an excellent base-station or vehicle-based node. Note: Unlike most other nodes, the Station G2 has no support for onboard battery and requires external USB-C PD power.
+
+* Pros
+    * Better than average sensitivity
+    * Custom designed for excellent Meshtastic performance
+    * Supports for more powerful RF, for Amateur licensed usage.
+* Cons
+    * Not designed for portable usage
+

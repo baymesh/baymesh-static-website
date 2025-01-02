@@ -14,4 +14,5 @@ If you haven't checked the [Offical Meshtastic Getting Started Guide](https://me
 - Wipe and flash firmware using the [Meshtastic Web Flasher](https://flash.meshtastic.org/)
 - Connect to the node via serial or bluetooth to your phone or computer
 - Follow the [reccomended settings]({{< ref "recommended-settings" >}})
+- Join us on [Discord](https://discord.gg/GpsKbhGJx5)
 - Send messages!

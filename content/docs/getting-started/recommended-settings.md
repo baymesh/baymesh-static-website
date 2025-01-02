@@ -14,7 +14,8 @@ In the Bay Area, we have a few recommendations for configuration:
     * Set region to United States (US)
     * **Preset**: Long Range - Fast (Default)
     * **Number of hops**: 3 (Default) - Please don't turn this up.
-    * Set Ignore MQTT to true to avoid forwarding MQTT traffic
+    * **Ignore MQTT**: Optional: Enable this to ignore traffic that may have been downlinked from MQTT (the internet)
+    * **Ok to MQTT**: Optional: Enable this for your messages to be uploaded to MQTT (the internet). This is required for your messages to show up on the Discord logger, Meshview, or location on any maps.
 * Channels
     * 0 Primary Channel
         * **Name**: Blank (Default)
@@ -32,8 +33,8 @@ In the Bay Area, we have a few recommendations for configuration:
         * See [offical docs for full breakdown](https://meshtastic.org/blog/choosing-the-right-device-role/)
 * Module Configuration
     * MQTT
-        * If you want to be internet-connected, see [MQTT](MQTT) - This can be on nodes with their own WiFi chips or on the go with MQTT client proxy from the phone app.
-    * Device Telemetry
-        * Device Metrics: 1 hour.
-        * Sensor Metrics: 1 hour.
+        * If you want to upload to the internet, see [MQTT](MQTT) - This can be on nodes with their own WiFi chips or on the go with MQTT client proxy from the phone app.
+    * Device Telemetry (iOS)
+        * Device Metrics: 1 hour (iOS) / 3600 seconds (Android)
+        * Sensor (Environment) Metrics: 1 hour / 3600 seconds (Android)
 
