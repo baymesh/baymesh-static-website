@@ -11,24 +11,32 @@ This is also only useful on "base station" nodes. Ones that are in a good positi
 
 MQTT is the technology used to feed the mesh data to the internet (aka what powers the Mesh Maps, Discord Logger, etc). Setting up MQTT is totally optional and should only be done on a staticly installed node with strong and reliable internet access (like a node on your roof). If you are just using a portable node, you do not need to take any actions.
 
+Module documentation: https://meshtastic.org/docs/configuration/module/mqtt
+
 ## MQTT Settings
 If you want to use MQTT:
 
 * Module Configuration > MQTT
-    * MQTT Enabled: **True**
-    * Encryption Enabled: **True**
-    * JSON Enabled: **False**
-        * This doesn't work on RAK devices, only ESP32
-        * Its limited and isn't needed by the logger or meshview.
-    * Map Report Enabled: Optional
-    * Root Topic: `msh/US/bayarea`
-        * EXACTLY this, the capitalization matters
-    * Server Address: `mqtt.bayme.sh`
+    * MQTT Enabled: **Enabled**
+    * Address: `mqtt.bayme.sh`
+        * Our Bay-Area-specific server
     * Username: `meshdev`
     * Password: `large4cats`
-    * TLS Enabled: Optional
+    * [Encryption Enabled](https://meshtastic.org/docs/configuration/module/mqtt/#encryption-enabled): **Enabled**
+    * [JSON Enabled](https://meshtastic.org/docs/configuration/module/mqtt/#json-enabled): **Enabled**
+        * This doesn't work on RAK devices, only ESP32
+        * It's limited and isn't needed by the logger or meshview
+    * TLS Enabled: **Optional**
         * If you want to use TLS, it's supported
+    * Root Topic: `msh/US/bayarea`
+        * EXACTLY this, the capitalization matters
+    * [Proxy to client enabled](https://meshtastic.org/docs/configuration/module/mqtt/#client-proxy-enabled): **Disabled**
+        * This sends the mqtt messages via your phone's internet connection, not your node's own internet connection.
+        * Logging this way requires your phone to be near your node at all times which means that it will most likely be unreliable and inappropriate.
+    * [Map Report Enabled](https://meshtastic.org/docs/configuration/module/mqtt/#map-reporting-enabled): **Optional**
+        * This will report your node's location along with other network data
 
 * Radio Configuration > Channels > 0 / Primary
-    * MQTT Uplink: **Enabled**
-    * **NEVER EVER ENABLE DOWNLINK**
+    * Uplink enabled: **Enabled**
+    * Downlink enabled: **Disabled**
+        * **NEVER EVER ENABLE DOWNLINK**: this will send messages from the MQTT server to the mesh, increasing mesh traffic, likely degrading it.
