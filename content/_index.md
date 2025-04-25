@@ -4,7 +4,7 @@ title: Bayme.sh Home
 
 {{< blocks/cover title="Meshtastic Bay Area Group" image_anchor="top" height="full" >}}
 
-<a class="btn btn-lg btn-primary me-3 mb-4 text-nowrap big-ol-mobile-btn " style="background-color: #7289da; border-color: #7289da;" href="https://discord.gg/GpsKbhGJx5">
+<a class="btn btn-lg btn-primary me-3 mb-4 text-nowrap big-ol-mobile-btn " style="background-color: #7289da; border-color: #7289da;" href="https://discord.gg/baymesh">
   Join Our Discord <i class="fab fa-discord ms-2 "></i>
 </a>
 
@@ -46,7 +46,7 @@ Meshtastic is an open-source, decentralized, off-grid mesh network. It's made up
 {{% /blocks/section %}}
 
 {{% blocks/section %}}
-## Join the [Baymesh Discord](https://discord.gg/GpsKbhGJx5)
+## Join the [Baymesh Discord](https://discord.gg/baymesh)
 
 {{% /blocks/section %}}
 
