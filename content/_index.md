@@ -16,7 +16,7 @@ title: Bayme.sh Home
   Meshtastic.org <img src="/Mesh_Logo_Black.svg" class="ms-2" alt="Meshtastic" width="24" height="24">
 </a>
 
-<p class="lead mt-5">Connecting the Bay Area, One Node at a Time</p>
+<p class="lead mt-5">"The Best Mesh in the West"</p>
 
 {{< blocks/link-down color="info" >}}
 {{< /blocks/cover >}}
