@@ -17,7 +17,7 @@ The Bay Area is a large area but with a large community of users. If you see a d
 
 For data and views on mesh information:
 * [Bay Mesh Explorer](https://app.bayme.sh/) - Just enter your node info in the search box. It'll provide you a brief overview of the info from the mesh.
-* [Meshview](https://meshview.rouvier.org/) - This allows you to drill way down into all things seen on the mesh (that reach the internet). Search for your node. It'll show you node info, graphs of power, neighbors, and environmental telementry. Also you'll see ALL packets sent/recieved by this node along with all uplinked packets (if on MQTT).
+* [Meshview](https://meshview.bayme.sh/) - This allows you to drill way down into all things seen on the mesh (that reach the internet). Search for your node. It'll show you node info, graphs of power, neighbors, and environmental telementry. Also you'll see ALL packets sent/recieved by this node along with all uplinked packets (if on MQTT).
 </div>
 
 
