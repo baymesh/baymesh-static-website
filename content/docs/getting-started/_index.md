@@ -10,7 +10,7 @@ If you haven't checked the [Offical Meshtastic Getting Started Guide](https://me
 {{% /pageinfo %}}
 
 ## Getting started in 5 easy steps
-- Get a supported device ( our [reccomendation]({{< ref "recommended-hardware" >}}) )
+- Get a supported device ( our [recommendations]({{< ref "recommended-hardware" >}}) )
 - Wipe and flash firmware using the [Meshtastic Web Flasher](https://flash.meshtastic.org/)
 - Connect to the node via serial or bluetooth to your phone or computer
 - Follow the [reccomended settings]({{< ref "recommended-settings" >}})
