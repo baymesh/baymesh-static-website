@@ -16,7 +16,7 @@ In the Bay Area, we have a few recommendations for configuration:
 * LORA
     * Set region to United States (US)
     * **Preset**: Medium Range Slow
-    * **Number of hops**: 3 (Default) - Please don't turn this up.
+    * **Number of hops**: 5 (3 is default, up to 5 is ok to start with)
     * **Ignore MQTT**: Optional: Enable this to ignore traffic that may have been downlinked from MQTT (the internet)
     * **Ok to MQTT**: Optional: Enable this for your messages to be uploaded to MQTT (the internet). This is required for your messages to show up on the Discord logger, Meshview, or location on any maps.
 * Channels
