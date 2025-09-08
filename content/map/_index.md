@@ -6,7 +6,7 @@ menu: {main: {weight: 30}}
 
 {{% blocks/section type="row" color="light"%}}
 <div style="flex: 1; max-width: 50%;">
-    <img src="2025-08-09_map.png" alt="The node map" style="width: 100%; height: auto;">
+    <img src="2025-09-09_map.png" alt="The node map" style="width: 100%; height: auto;">
 </div>
 <div style="max-width: 50%; padding-top: 20px">
 The Bay Area is a large area but with a large community of users. If you see a dot near your area, then there is already someone active in the Bay Mesh there. If there isn't a dot in you area, we'd strongly encourage you to join us and become part of the mesh!
