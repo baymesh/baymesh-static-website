@@ -6,13 +6,13 @@ weight: 20
 ---
 
 {{% pageinfo %}}
-If you haven't checked the [Offical Meshtastic Getting Started Guide](https://meshtastic.org/docs/getting-started/) we'd reccomend you start there first.
+If you haven't checked the [Offical Meshtastic Getting Started Guide](https://meshtastic.org/docs/getting-started/) we'd recommend you start there first.
 {{% /pageinfo %}}
 
 ## Getting started in 5 easy steps
-- Get a supported device ( our [reccomendation]({{< ref "recommended-hardware" >}}) )
+- Get a supported device ( our [recommendation]({{< ref "recommended-hardware" >}}) )
 - Wipe and flash firmware using the [Meshtastic Web Flasher](https://flash.meshtastic.org/)
 - Connect to the node via serial or bluetooth to your phone or computer
-- Follow the [reccomended settings]({{< ref "recommended-settings" >}})
+- Follow the [recommended settings]({{< ref "recommended-settings" >}})
 - Join us on [Discord](https://discord.gg/GpsKbhGJx5)
 - Send messages!
