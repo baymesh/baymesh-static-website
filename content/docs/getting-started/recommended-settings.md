@@ -6,19 +6,20 @@ tags: [Newbie, Config Settings, Client Config, MQTT]
 
 Please make sure to update the firmware on your device as you get started. The easiest way to do that is to use [the Web Flasher](https://flasher.meshtastic.org/). The latest stable release, even if labeled Beta, is generally a very safe option. 
 
-Most importantly make sure to keep all automatic beacons like telemetry and position (if used on a stationary node) to 1 hour +.
+Most importantly make sure to keep all automatic beacons like telemetry and position (if used on a stationary node) to 6 hour +.  If you want to send position while moving, use Smart Position, with minimum 10 minutes and distance trigger 100 to 130.  This helps keep our mesh clean of background traffic thats of little use. 
 
-If you are joining our Medium Slow network you can fill out the optional registration [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSd7f8_bAyBsxvOLQ3vJacsg3lPAdw0Eo9pVaS3UJG1gX0KVpA/viewform)
+If you are joining our network you can fill out the optional registration [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSd7f8_bAyBsxvOLQ3vJacsg3lPAdw0Eo9pVaS3UJG1gX0KVpA/viewform), or you may visit discord and '/linknode !nodeid' in the logger channels. 
 
 In the Bay Area, we have a few recommendations for configuration:     
 (Make sure to read all the recommended settings)
 
 * LORA
     * Set region to United States (US)
-    * **Preset**: Medium Range Slow
-    * **Number of hops**: 5 (3 is default, up to 5 is ok to start with)
+    * **Preset**: Medium Range Fast
+    * **Number of hops for infrastructure node**: 4 (3 is default, up to 5 is ok)
+    * **Number of hops for personal/chat node**: 6 (up to 7 is ok if desired)
     * **Ignore MQTT**: Optional: Enable this to ignore traffic that may have been downlinked from MQTT (the internet)
-    * **Ok to MQTT**: Optional: Enable this for your messages to be uploaded to MQTT (the internet). This is required for your messages to show up on the Discord logger, Meshview, or location on any maps.
+    * **Ok to MQTT**: Optional: Enable this for your messages to be uploaded to MQTT (the internet). This is required for your messages to show up on the Discord logger, Meshview, or location on any maps. This helps us see where traffic flows, and troubleshoot issues. 
 * Channels
     * 0 Primary Channel
         * **Name**: Blank (Default)
@@ -39,6 +40,6 @@ In the Bay Area, we have a few recommendations for configuration:
     * MQTT
         * If you want to upload to the internet, see [MQTT](MQTT) - This can be on nodes with their own WiFi chips or on the go with MQTT client proxy from the phone app.
     * Device Telemetry (iOS)
-        * Device Metrics: 1 hour (iOS) / 3600 seconds (Android)
-        * Sensor (Environment) Metrics: 1 hour / 3600 seconds (Android)
+        * Device Metrics: 6 hour (iOS) / 21,600 seconds (Android)
+        * Sensor (Environment) Metrics: 6 hour / 21,600 seconds (Android)
 
