@@ -42,4 +42,6 @@ In the Bay Area, we have a few recommendations for configuration:
     * Device Telemetry (iOS)
         * Device Metrics: 6 hour (iOS) / 21,600 seconds (Android)
         * Sensor (Environment) Metrics: 6 hour / 21,600 seconds (Android)
-
+    * Neighbor Info
+        * Set Neighbor Info Enabled to true
+        * Enter default Update interval: 4 hour / 14400 seconds
