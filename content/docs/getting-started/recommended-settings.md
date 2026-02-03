@@ -16,6 +16,7 @@ In the Bay Area, we have a few recommendations for configuration:
 * LORA
     * Set region to United States (US)
     * **Preset**: Medium Range Fast
+    * **Frequency slot**: 45 (You may or may not need to set this)
     * **Number of hops for infrastructure node**: 4 (3 is default, up to 5 is ok)
     * **Number of hops for personal/chat node**: 6 (up to 7 is ok if desired)
     * **Ignore MQTT**: Optional: Enable this to ignore traffic that may have been downlinked from MQTT (the internet)
