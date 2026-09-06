@@ -30,14 +30,12 @@
     "postbuild:production": "npm run _check:links",
     "serve": "npm run _serve",
     "test": "npm run check:links",
-    "update:dep": "npm install --save-dev autoprefixer@latest postcss-cli@latest",
-    "update:hugo": "npm install --save-dev --save-exact hugo-extended@latest"
+    "update:dep": "npm install --save-dev autoprefixer@latest postcss-cli@latest"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "cross-env": "^7.0.3",
-    "hugo-extended": "0.126.3",
-    "postcss-cli": "^11.0.0"
+    "autoprefixer": "^10.5.5",
+    "cross-env": "^10.1.0",
+    "postcss-cli": "^12.0.0"
   },
   "private": true,
   "prettier": {
