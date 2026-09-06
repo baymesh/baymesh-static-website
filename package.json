@@ -41,5 +41,8 @@
   "prettier": {
     "proseWrap": "always",
     "singleQuote": true
-  }
+  },
+  "workspaces": [
+    "packages/hugoautogen"
+  ]
 }

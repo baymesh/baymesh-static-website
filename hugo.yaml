@@ -45,7 +45,7 @@ imaging:
 # Language configuration
 languages:
   en:
-    languageName: English
+    label: English
     title: Bayme.sh
     params:
       description: Meshtastic Bay Area Group
@@ -199,9 +199,9 @@ module:
   # workspace: docsy.work
   hugoVersion:
     extended: true
-    min: 0.110.0
+    min: 0.160.1
   imports:
-    - path: github.com/google/docsy
+    - path: github.com/google/docsy/theme
       disable: false
 
 menu:
