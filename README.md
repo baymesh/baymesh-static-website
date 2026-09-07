@@ -61,4 +61,4 @@ deploying.
 
 ## License
 
-Apache-2.0 (per `package.json`).
+MIT — see [LICENSE](LICENSE).

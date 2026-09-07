@@ -1,14 +1,12 @@
 {
   "name": "bayme.sh",
   "version": "0.0.1",
-  "version.next": "0.0.1-dev.0-unreleased",
   "description": "BayMe.sh Website",
-  "repository": "github:bayme/bayme.sh",
+  "repository": "github:baymesh/baymesh-static-website",
   "homepage": "https://bayme.sh",
   "author": "BayMesh Authors",
-  "license": "Apache-2.0",
-  "bugs": "https://github.com/baymesh/bayme.sh/issues",
-  "spelling": "cSpell:ignore docsy hugo htmltest precheck postbuild -",
+  "license": "MIT",
+  "bugs": "https://github.com/baymesh/baymesh-static-website/issues",
   "scripts": {
     "_build": "npm run _hugo-dev --",
     "_check:links": "echo IMPLEMENTATION PENDING for check-links; echo",
