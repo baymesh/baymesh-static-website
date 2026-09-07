@@ -18,7 +18,7 @@ title: Bayme.sh Home
 
 <p class="lead mt-5">"The Best Mesh in the West"</p>
 
-{{< blocks/link-down color="info" >}}
+{{< blocks/link-down color="primary" >}}
 {{< /blocks/cover >}}
 
 {{% blocks/section color="primary" %}}
@@ -38,14 +38,14 @@ Come be a part of the Bay Mesh community, where your passion for mesh radio comm
 
 {{% /blocks/section %}}
 
-{{% blocks/section %}}
+{{% blocks/section color="secondary" %}}
 ## What is [Meshtastic](https://meshtastic.org/)?
 
 Meshtastic is an open-source, decentralized, off-grid mesh network. It's made up of small communicators that can form a mesh network. These communicators can be linked to a phone via Bluetooth or Wi-Fi. Meshtastic uses inexpensive LoRa radios as a long-range communication platform.  Learn more at the official Meshtastic website.
 
 {{% /blocks/section %}}
 
-{{% blocks/section %}}
+{{% blocks/section color="primary" %}}
 ## Join the [Baymesh Discord](https://discord.gg/GpsKbhGJx5)
 
 {{% /blocks/section %}}
