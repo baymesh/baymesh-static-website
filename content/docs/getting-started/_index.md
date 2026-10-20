@@ -1,18 +1,18 @@
 ---
 title: Getting Started
-description: If you've never used Meshtastic before this is a great place to start
+description: A starting point for new Meshtastic users
 tags: [Newbie]
 weight: 20
 ---
 
 {{% pageinfo %}}
-If you haven't checked the [Offical Meshtastic Getting Started Guide](https://meshtastic.org/docs/getting-started/) we'd recommend you start there first.
+Start with the [official Meshtastic getting started guide](https://meshtastic.org/docs/getting-started/) if you haven't read it yet.
 {{% /pageinfo %}}
 
-## Getting started in 5 easy steps
-- Get a supported device ( our [recommendation]({{< ref "recommended-hardware" >}}) )
-- Wipe and flash firmware using the [Meshtastic Web Flasher](https://flash.meshtastic.org/)
-- Connect to the node via serial or bluetooth to your phone or computer
-- Follow the [recommended settings]({{< ref "recommended-settings" >}})
-- Join us on [Discord](https://discord.gg/GpsKbhGJx5)
-- Send messages!
+## Getting started
+
+1. Get a supported device. See our [hardware recommendations]({{< ref "recommended-hardware" >}}).
+2. Check the firmware and update if needed. Use the [Meshtastic Web Flasher](https://flasher.meshtastic.org/) and follow the instructions for your exact device; a routine update does not always require a full erase.
+3. Connect to the node from your phone or computer using Bluetooth or a serial connection.
+4. Apply our [recommended settings]({{< ref "recommended-settings" >}}).
+5. Join us on [Discord](https://discord.gg/GpsKbhGJx5) and send a message.

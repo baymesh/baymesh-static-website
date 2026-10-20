@@ -1,42 +1,42 @@
 ---
 title: MQTT
-description: A few more details about MQTT specifically
-tags: [Newbies, MQTT]
+description: How to connect a stationary node to Bay Area MQTT
+tags: [Newbie, MQTT]
 ---
 {{% pageinfo %}}
-This is on the most advanced side of things. If you don't know what "MQTT" is, leave it disabled. You do not need to turn MQTT to have your messages on the logger.
+MQTT is an advanced feature. If you're unfamiliar with it, leave it disabled. You do not need to enable MQTT on your own node for your messages to appear in the logger.
 
-This is also only useful on "base station" nodes. Ones that are in a good position to pick up messages AND with a stable internet/wifi connection. 
+MQTT is most useful on base stations that can receive mesh traffic and have a stable internet connection.
 {{% /pageinfo %}}
 
-MQTT is the technology used to feed the mesh data to the internet (aka what powers the Mesh Maps, Discord Logger, etc). Setting up MQTT is totally optional and should only be done on a staticly installed node with strong and reliable internet access (like a node on your roof). If you are just using a portable node, you do not need to take any actions.
+MQTT sends mesh data to internet services such as mesh maps and the Discord logger. Setting it up is optional. Use it only on a stationary node with a reliable internet connection, such as a rooftop node. Portable nodes need no additional setup.
 
-Module documentation: https://meshtastic.org/docs/configuration/module/mqtt
+See the [official MQTT module documentation](https://meshtastic.org/docs/configuration/module/mqtt).
 
 ## MQTT Settings
-If you want to use MQTT:
+To use MQTT, configure the following settings:
 
 * Module Configuration > MQTT
     * MQTT Enabled: **Enabled**
     * Address: `mqtt.bayme.sh`
-        * Our Bay-Area-specific server
+        * Our Bay Area MQTT server
     * Username: `meshdev`
     * Password: `large4cats`
     * [Encryption Enabled](https://meshtastic.org/docs/configuration/module/mqtt/#encryption-enabled): **Enabled**
     * [JSON Enabled](https://meshtastic.org/docs/configuration/module/mqtt/#json-enabled): **Enabled**
-        * This doesn't work on RAK devices, only ESP32
-        * It's limited and isn't needed by the logger or meshview
+        * This works on ESP32 devices, but not RAK devices.
+        * It has limited use and is not needed by the logger or Meshview.
     * TLS Enabled: **Optional**
-        * If you want to use TLS, it's supported
+        * TLS is supported if you want to use it.
     * Root Topic: `msh/US/bayarea`
-        * EXACTLY this, the capitalization matters
+        * Enter this exactly; capitalization matters.
     * [Proxy to client enabled](https://meshtastic.org/docs/configuration/module/mqtt/#client-proxy-enabled): **Disabled**
-        * This sends the mqtt messages via your phone's internet connection, not your node's own internet connection.
-        * Logging this way requires your phone to be near your node at all times which means that it will most likely be unreliable and inappropriate.
+        * This sends MQTT messages through your phone's internet connection instead of the node's connection.
+        * Logging this way requires your phone to stay near the node, so it is likely to be unreliable.
     * [Map Report Enabled](https://meshtastic.org/docs/configuration/module/mqtt/#map-reporting-enabled): **Optional**
-        * This will report your node's location along with other network data
+        * This reports your node's location along with other network data.
 
 * Radio Configuration > Channels > 0 / Primary
     * Uplink enabled: **Enabled**
     * Downlink enabled: **Disabled**
-        * **NEVER EVER ENABLE DOWNLINK**: this will send messages from the MQTT server to the mesh, increasing mesh traffic, likely degrading it.
+        * Keep downlink disabled. It sends messages from the MQTT server onto the mesh, increasing traffic and potentially degrading performance.

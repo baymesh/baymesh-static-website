@@ -1,48 +1,47 @@
 ---
 title: Recommended Settings
-description: We have some sane default settings that we strongly recommend you follow
+description: Recommended settings for joining the Bay Area mesh
 tags: [Newbie, Config Settings, Client Config, MQTT]
 ---
 
-Please make sure to update the firmware on your device as you get started. The easiest way to do that is to use [the Web Flasher](https://flasher.meshtastic.org/). The latest stable release, even if labeled Beta, is generally a very safe option. 
+Check your device's firmware before you get started. The [Meshtastic Web Flasher](https://flasher.meshtastic.org/) provides device-specific update instructions. Use the current recommended **Beta** release for your device; Alpha releases are for testing. Read the release notes before updating.
 
-Most importantly make sure to keep all automatic beacons like telemetry and position (if used on a stationary node) to 6 hour +.  If you want to send position while moving, use Smart Position, with minimum 10 minutes and distance trigger 100 to 130.  This helps keep our mesh clean of background traffic thats of little use. 
+Set automatic telemetry and position broadcasts from stationary nodes to intervals of at least six hours. If you want to share your position while moving, use Smart Position with a minimum interval of 10 minutes and a distance trigger of **100–130 meters**. See the [Smart Position settings](https://meshtastic.org/docs/configuration/radio/position/#smart-broadcast-minimum-distance) for the exact controls. These settings reduce unnecessary background traffic on the mesh.
 
-If you are joining our network you can fill out the optional registration [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSd7f8_bAyBsxvOLQ3vJacsg3lPAdw0Eo9pVaS3UJG1gX0KVpA/viewform), or you may visit discord and '/linknode !nodeid' in the logger channels. 
+If you're joining our network, you can fill out the optional [registration form](https://docs.google.com/forms/d/e/1FAIpQLSd7f8_bAyBsxvOLQ3vJacsg3lPAdw0Eo9pVaS3UJG1gX0KVpA/viewform). You can also visit a Discord logger channel and enter `/linknode !nodeid`.
 
-In the Bay Area, we have a few recommendations for configuration:     
-(Make sure to read all the recommended settings)
+For the Bay Area mesh, review all of the following settings:
 
-* LORA
+* LoRa
     * Set region to United States (US)
     * **Preset**: Medium Range Fast
-    * **Frequency slot**: 45 (You may or may not need to set this)
-    * **Number of hops for infrastructure node**: 4 (3 is default, up to 5 is ok)
-    * **Number of hops for personal/chat node**: 6 (up to 7 is ok if desired)
-    * **Ignore MQTT**: Optional: Enable this to ignore traffic that may have been downlinked from MQTT (the internet)
-    * **Ok to MQTT**: Optional: Enable this for your messages to be uploaded to MQTT (the internet). This is required for your messages to show up on the Discord logger, Meshview, or location on any maps. This helps us see where traffic flows, and troubleshoot issues. 
+    * **Frequency slot**: **45**. Set it explicitly to stay on the BayMesh frequency even if you later rename your primary channel.
+    * **Number of hops for an infrastructure node**: 4 (the default is 3; up to 5 is acceptable)
+    * **Number of hops for a personal or chat node**: 6 (up to 7 if desired)
+    * **Ignore MQTT**: Optional. Enable this to ignore traffic downlinked from MQTT (the internet).
+    * **OK to MQTT**: Optional. Enable this to allow your messages to be uploaded to MQTT. For the public channel, participating gateways use this permission to forward traffic to the Discord logger, Meshview, and maps. It does not guarantee that a gateway will hear you, and it is not a privacy control for public messages.
 * Channels
     * 0 Primary Channel
-        * **Name**: Blank (Default)
-        * **Key**: AQ== (Default)
-        * You may wish to turn off Positions & Location if you're not interested in broadcasting your location
-        * If you wish to enable a precise location you can do so via any client other than iOS
+        * **Name**: Blank (default)
+        * **Key**: `AQ==` (default)
+        * Turn off Positions & Location if you don't want to broadcast your location.
+        * Review the channel's position precision before sharing a location. The default public key is known to everyone; see [private-use guidance]({{< ref "/docs/emergency-private-use" >}}) for private groups.
 * User
-    * **Long Name**: Something descriptive. Ex: Your name, Discord Handle, or Ham Callsign. You can even include an email or website (ProTip: put BayMe.sh in your name so more people can find us)
-    * **Short Name**: Max of 4 characters, something unique for you and that particular radio. This will be what's displayed in chat. You can even use emojis to spice things up.
-    * **Licensed Operator**: Do not enable unless you are a licensed [Amateur Radio operators](https://en.wikipedia.org/wiki/Amateur_radio) and have read [Licensed Operations]({{< ref "/docs/licensed-operations" >}}). (You will not be able to communicate with people on any of the default channels if you enable this)
+    * **Long Name**: Choose something descriptive, such as your name, Discord handle, or amateur radio call sign. You can also include an email address or website. Tip: Include BayMe.sh so more people can find us.
+    * **Short Name**: Use up to four characters that distinguish this radio from your other nodes. This name appears in chat; emoji are welcome.
+    * **Licensed Operator**: Leave this **off** to join BayMesh, even if you hold an amateur radio license. Read [Licensed Operations]({{< ref "/docs/licensed-operations" >}}) before using ham mode.
 * Device Config
     * **Device Role**
-        * Client Mute - Best for vehicles and any time you have more than 2 nodes in the same place. It will not relay messages. (It will still transmit its own packets)
-        * Client - Recommended for a home "base stations" or your single primary node. It will relay messages it receives.
-        * Router / Repeater - DO NOT use this role. There are a lot of considerations, and caveats, to using the offical Router & Repeater roles. Remember: The Client role relays messages just fine.
-        * See [offical docs for full breakdown](https://meshtastic.org/blog/choosing-the-right-device-role/)
+        * Client Mute — Best for vehicles or when you have more than two nodes in one place. It transmits its own packets but does not relay messages.
+        * Client — Recommended for a home base station or your single primary node. It relays messages it receives.
+        * Router / Repeater — Do not use these roles. They require additional care, and the Client role already relays messages.
+        * See the [official guide to device roles](https://meshtastic.org/blog/choosing-the-right-device-role/).
 * Module Configuration
     * MQTT
-        * If you want to upload to the internet, see [MQTT](MQTT) - This can be on nodes with their own WiFi chips or on the go with MQTT client proxy from the phone app.
+        * For a stationary gateway with a reliable internet connection, see [MQTT]({{< ref "/docs/getting-started/MQTT" >}}). You do not need MQTT enabled on your portable node to use the mesh or have a nearby gateway upload your public messages.
     * Device Telemetry (iOS)
-        * Device Metrics: 6 hour (iOS) / 21,600 seconds (Android)
-        * Sensor (Environment) Metrics: 6 hour / 21,600 seconds (Android)
+        * Device Metrics: 6 hours (iOS) / 21,600 seconds (Android)
+        * Sensor (Environment) Metrics: 6 hours / 21,600 seconds (Android)
     * Neighbor Info
-        * Set Neighbor Info Enabled to true
-        * Enter default Update interval: 4 hour / 14400 seconds
+        * Neighbor Info is optional and does not improve routing. Current firmware restricts sending it over LoRa on the default public channel.
+        * If you enable it for a supported setup, use an update interval of 4 hours / 14,400 seconds. See the [official module documentation](https://meshtastic.org/docs/configuration/module/neighbor-info/) for availability and controls.

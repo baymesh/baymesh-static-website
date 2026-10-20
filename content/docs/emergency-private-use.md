@@ -1,11 +1,43 @@
 ---
-title: Emergency/Private Use
-description: You think this meshtastic thing is cool, but want don't want to join our broader net? That's cool too!
+title: Emergency and Private Use
+description: Set up a private group and practice communicating without cellular service
 weight: 40
-tags: [Emergency]
+tags: [Emergency, Privacy]
 ---
 
-If you are planning on using Meshtastic in the Bay Area and don't want to participate in the broader network, or what to make sure you're setup with your friends/family in case of an emergency, that's cool. We've got some suggestions for you:
+Meshtastic can help friends, families, and neighbors exchange short messages without cellular service. You can hold private conversations on the community mesh or build a separate mesh for your group. Decide which approach you need before changing your settings.
 
-* Don't use Frequency Slot 0
-* Use "client" mode
+## Private conversations on BayMesh
+
+Keep the [BayMesh radio settings]({{< ref "/docs/getting-started/recommended-settings" >}}): US region, Medium Fast preset, and frequency slot **45**. Leave the public primary channel in place, then add a **secondary channel** with a custom name and a newly generated random encryption key. Give each group member the same channel name and key using the app's channel-sharing link or QR code.
+
+Treat the link or QR code like a password: it contains the key. The default public key, `AQ==`, is known to everyone and does not make a conversation private. Use the app's key generator, preferably for a 256-bit key, instead of a memorable word. See the official [channel configuration](https://meshtastic.org/docs/configuration/radio/channels/) and [encryption guide](https://meshtastic.org/docs/overview/encryption/).
+
+Your group shares radio airtime with BayMesh. Other nodes may relay your encrypted packets without being able to read the messages. A private channel does not reserve capacity or guarantee delivery.
+
+## A separate mesh for your group
+
+For a group that wants to operate separately from BayMesh:
+
+1. Set every radio to the **US** region and the same modem preset. Start with the **Client** role so your nodes can relay for one another.
+2. Give the **primary channel** a custom name and generate a random encryption key. Share those settings privately with every member.
+3. Set **Frequency Slot to `0` (automatic)** if you want Meshtastic to choose a slot based on the primary channel name. **Changing only the encryption key does not change the frequency.** Renaming the primary channel affects automatic slot selection; it does not override a manually selected slot.
+4. Check the resulting frequency. A custom name can still select the same slot as another mesh. To operate separately, choose an available valid slot other than BayMesh's **45** for Medium Fast, and explicitly set it on every radio. Ask in [Discord](https://discord.gg/GpsKbhGJx5) if you need help coordinating locally.
+5. Test messages in both directions before separating the radios.
+
+The official [LoRa configuration guide](https://meshtastic.org/docs/configuration/radio/lora/#frequency-slot) explains automatic and manual slot selection. A separate frequency means you cannot count on BayMesh nodes to relay your messages. Your group needs its own connected radio path.
+
+## Keep location and internet sharing intentional
+
+Review position sharing on every enabled channel, including the public primary channel. A private secondary chat does not automatically hide location broadcasts sent elsewhere. Disable location sharing where you don't need it, or choose an appropriate precision. See [Meshtastic's location-sharing guidance](https://meshtastic.org/docs/configuration/tips/).
+
+For a radio-only group, disable MQTT and channel uplinks/downlinks on your nodes. Keep your private keys out of public screenshots and support requests. If a radio or key is lost, generate a new group key and update the remaining radios.
+
+## Practice before an outage
+
+- Test from the places people will actually use their radios: home, work, meeting points, and likely travel routes. Hills and buildings can break the path between nearby addresses.
+- Agree on check-in times, short message formats, and a meeting plan if no reply arrives. Ask for a written reply when confirmation matters.
+- Keep radios and phones charged, with suitable spare power and charging cables. Test the app with cellular data and Wi-Fi off and Bluetooth on.
+- Save the setup instructions and private channel QR code somewhere your group can access offline. Practice restoring a spare radio.
+
+BayMesh is a volunteer network, and coverage, power, and message delivery can change during an outage. Meshtastic does not contact 911 or a monitored rescue service; use it as one part of your communication plan.

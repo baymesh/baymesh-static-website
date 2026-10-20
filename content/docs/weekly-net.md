@@ -1,21 +1,20 @@
 ---
 title: Weekly Net
-description: >
-  We meet regularly, how to participate
+description: How to participate in our weekly Meshtastic net
 weight: 30
 tags: [Gathering, Events]
 ---
 
 {{% pageinfo %}}
 
-Wednesday at 5pm. On air and on Discord voice
+Wednesdays at 5 p.m., on the mesh and in a Discord voice channel.
 
 {{% /pageinfo %}}
 
 ## Meshtastic Net
-I will keep it open from 5-6pm for checkins so you do not have to rush. The message format will just be (LONG NAME) - (CITY YOU ARE IN) #BayMeshNet. So for example I would do Ko6cnt Base - Santa Clara #BayMeshNet. 
+Check in anytime between 5 and 6 p.m. using this format: `LONG NAME - CITY #BayMeshNet`. For example: `Ko6cnt Base - Santa Clara #BayMeshNet`.
 
-You can see a log of past checkins on the [Net Checkin Log](https://meshview.bayme.sh/net).
+See past check-ins in the [Net Check-in Log](https://meshview.bayme.sh/net).
 
 ## Voice Call
-Also at the same time at 5pm we will be holding a voice call in the discord voice channel. It will be more like a general purpose discussion of all things Meshtastic in the Bay.
+A Discord voice call starts at 5 p.m. for general discussion of Meshtastic in the Bay Area.

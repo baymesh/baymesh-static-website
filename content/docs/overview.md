@@ -1,14 +1,8 @@
 ---
 title: Overview
-description: A quick overview over what meshtastic is and how it works
+description: A quick overview of Meshtastic and how it works
 weight: 10
 tags: [Overview]
 ---
 
-{{% pageinfo %}}
-
-What more of an overview do people need? ChatGPT was here.
-
-{{% /pageinfo %}}
-
-Meshtastic is an open-source project that allows people to communicate over long distances without relying on traditional cellular networks or Wi-Fi. It uses affordable devices equipped with LoRa (Long Range) technology to create a mesh network, enabling text messaging and GPS location sharing even in remote areas. Ideal for outdoor adventures, emergency situations, and local events, Meshtastic provides a simple and reliable way to stay connected when other communication methods are unavailable.
+Meshtastic is an open-source project for communicating over long distances without relying on cellular service or Wi-Fi. Affordable devices use LoRa radio technology to form a mesh network that can relay text messages and share GPS locations, even in remote areas. It can help people stay connected during outdoor activities, emergencies, and local events when other communication methods are unavailable.
