@@ -43,9 +43,9 @@ Test the routes you care about. Improve placement before buying more equipment, 
 
 ## It works outside, but not inside my house. What can I do?
 
-A second node in a higher, clearer location can relay messages to your indoor or portable node. Start with **Client** for the home node and consider **Client Mute** for an additional nearby handheld, following our [role recommendations]({{< ref "/docs/getting-started/recommended-settings" >}}).
+A second node in a higher, clearer location can relay messages to your indoor or portable node. Use **Client Base** for the home node and consider **Client Mute** for an additional nearby handheld, following our [role recommendations]({{< ref "/docs/getting-started/recommended-settings" >}}).
 
-For a more tailored setup, supported firmware offers **Client Base**, which prioritizes relaying traffic to and from favorited nodes. Review the [device-role documentation](https://meshtastic.org/docs/configuration/radio/device/#roles) before using it. Keep outdoor equipment appropriately enclosed and powered.
+While connected to the home node, mark your indoor or portable nodes as favorites. **Client Base** prioritizes relaying traffic to and from those nodes and handles other traffic like a regular Client. Review the [device-role documentation](https://meshtastic.org/docs/configuration/radio/device/#roles) for details. Keep outdoor equipment appropriately enclosed and powered.
 
 ## Should I use Router mode or increase the hop limit?
 

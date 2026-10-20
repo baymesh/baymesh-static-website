@@ -33,7 +33,8 @@ For the Bay Area mesh, review all of the following settings:
 * Device Config
     * **Device Role**
         * Client Mute — Best for vehicles or when you have more than two nodes in one place. It transmits its own packets but does not relay messages.
-        * Client — Recommended for a home base station or your single primary node. It relays messages it receives.
+        * Client — Recommended for your single primary node or general use. It relays messages it receives.
+        * Client Base — Recommended for a home base station serving your handheld or indoor nodes. While connected to the base station, mark those nodes as favorites so it prioritizes relaying their traffic. Other traffic is handled like a regular Client. See the [device-role documentation](https://meshtastic.org/docs/configuration/radio/device/#roles).
         * Router / Repeater — Do not use these roles. They require additional care, and the Client role already relays messages.
         * See the [official guide to device roles](https://meshtastic.org/blog/choosing-the-right-device-role/).
 * Module Configuration

@@ -66,6 +66,6 @@ The advertised maximum output is a hardware capability, not permission to transm
 - **Highlights:** Solar charging and batteries in one package, with low-power nRF52840/SX1262 hardware.
 - **Tradeoffs:** Shade, fog, and winter weather affect charging. Monitor the battery through several cloudy days before relying on the installation. The cheaper P1 omits the Pro's GPS and batteries.
 
-Start with the **Client** role and our [recommended settings]({{< ref "/docs/getting-started/recommended-settings" >}}). A solar panel or a rooftop location doesn't by itself call for Router mode.
+For a home installation, we recommend **Client Base** (`CLIENT_BASE`). While connected to the solar node, mark your handheld or indoor nodes as favorites so it prioritizes relaying traffic to and from them. It handles other traffic like a regular Client. Follow our [recommended settings]({{< ref "/docs/getting-started/recommended-settings" >}}) and the [Client Base documentation](https://meshtastic.org/docs/configuration/radio/device/#roles).
 
 [More specs](https://meshware.net/d/seeed-solar-node-p1-pro)
