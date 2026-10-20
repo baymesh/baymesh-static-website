@@ -36,15 +36,15 @@ The newer X1 keeps the card format and adds an LR2021 radio, dual-band GPS, USB-
 
 [More specs](https://meshware.net/d/rak-rak4631)
 
-## Seeed Studio Wio Tracker L1 / L1 Pro
+## Seeed Studio Wio Tracker L1 Pro
 
-**Our pick for a portable node with a screen and external antenna.** The L1 family combines an efficient nRF52840 processor, an SX1262 radio, and GPS. The standard L1 has a 1.3-inch OLED but needs a battery and enclosure. The **L1 Pro** includes a case and a 2,000 mAh battery, making it the easier starting point for a complete handheld.
+**Our pick for a portable node with a screen and external antenna.** The L1 Pro combines an efficient nRF52840 processor, an SX1262 radio, and GPS with a 1.3-inch OLED, a case, and a 2,000 mAh battery. It's a complete handheld with no assembly required.
 
-- **Good fit:** A portable radio with a display, or a small project you can customize.
+- **Good fit:** A ready-to-use portable radio with a display.
 - **Highlights:** GPS, OLED display, USB-C, and a replaceable external antenna.
-- **Tradeoffs:** Bulkier than a card tracker. Check the exact model and bundle: L1, L1 Lite, L1 E-Ink, and L1 Pro are different configurations. Don't assume the handheld case is weatherproof.
+- **Tradeoffs:** Bulkier than a card tracker. Don't assume the handheld case is weatherproof.
 
-[More specs — L1](https://meshware.net/d/seeed-l1) · [More specs — L1 Pro](https://meshware.net/d/seeed-l1-pro)
+[More specs](https://meshware.net/d/seeed-l1-pro)
 
 ## B&Q Consulting Station G3
 
