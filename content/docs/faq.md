@@ -7,51 +7,57 @@ tags: [FAQ]
 
 ## What is Meshtastic, in plain English?
 
-Think of text messaging over small radios. Your phone connects to your radio, which exchanges messages with nearby nodes. Other nodes can relay messages farther across the mesh. Both ends need compatible settings and a working radio path.
+> It's a walkie talkie for gen-z, you don't talk - you text.
 
-Start with [Meshtastic Basics]({{< ref "/docs/getting-started/meshtastic-basics" >}}) and our [getting-started guide]({{< ref "/docs/getting-started" >}}).
+Think of sending text messages over a walkie-talkie, with no voice. Unlike a regular walkie-talkie, mesh radios automatically relay your message down the line, like a kids' game of telephone—except they pass along the same text.
 
-## Do I need cell service, internet access, or a license?
+Start with our [getting-started guide]({{< ref "/docs/getting-started" >}}).
 
-You don't need cellular service or internet access for radio-to-radio messaging. Install the app and set up your node before going offline. A phone typically connects to its nearby node over Bluetooth; LoRa carries messages between radios.
+## LoRa?
 
-You don't need an amateur radio license for normal BayMesh participation with suitable US-region hardware used within its applicable limits. Leave **Licensed Operator off**, even if you have a call sign. See [Licensed Operations]({{< ref "/docs/licensed-operations" >}}) for the difference.
+LoRa is long-range, low-power radio technology. It's a way for radios to talk, like Wi-Fi, but designed to reach much, much farther while running much, much slower. It's the basis of Meshtastic and is used by a number of other popular technologies today. [Read more on Wikipedia](https://en.wikipedia.org/wiki/LoRa).
 
-## Why don't I see any nodes or receive messages?
+## Do I need cell service or internet access?
 
-Check your settings, then your node's placement:
+No. Once the app is installed and your radio is set up, it operates entirely off grid. The radios, or nodes as we call them, carry your messages over the open radio waves.
 
-1. Compare your radio with our [recommended settings]({{< ref "/docs/getting-started/recommended-settings" >}}): **US region, Medium Fast, frequency slot 45**, and the default public primary channel. Factory settings may use a different preset.
-2. Check that the radio is powered, the app is connected to the right device, and an appropriate 915 MHz antenna is attached if your model needs one. Turn the radio off before changing antennas.
-3. Try a higher, clearer location. A window or outdoor spot can help; walls, hills, trees, and metal can block the path. Test away from your body and other electronics.
-4. Allow time to hear traffic, then send one short introduction or arrange a test with someone nearby. Repeated test messages can add congestion without fixing the underlying problem.
-5. Check the [maps]({{< ref "/map" >}}) and ask in [Discord](https://discord.gg/GpsKbhGJx5). A map is a clue, not a coverage guarantee.
+## Is there a subscription or a charge for messages?
 
-If your app offers local mesh discovery, it can help identify nearby activity. Follow BayMesh's settings for the community network; settings from another city's guide may put you on a different mesh. See the official [joining guide](https://meshtastic.org/docs/getting-started/joining-your-local-mesh/).
+No. Meshtastic is free and open source. You just need to buy the hardware.
 
-## What does “acknowledged” mean? Did someone read my message?
+## Does everyone need a radio?
 
-A successful **channel message** usually means another node heard and rebroadcast it. It does not prove that everyone on the channel received it. A **direct-message acknowledgment** confirms that the destination node received it, but not that a person read it.
+Like a walkie-talkie, everyone who wants to send and receive messages needs their own radio, paired with their phone. Some devices have their own keyboard and screen.
 
-A missing acknowledgment can mean the message or its return acknowledgment was lost. It doesn't always mean nobody received it. For an important check-in, ask the person to reply. See the official [message-status explanations](https://meshtastic.org/docs/faq/#android-client).
+## Is Meshtastic the same as MeshCore?
+
+Meshtastic and MeshCore are two different open source mesh radio projects. They aim for the same goal—off-grid mesh communication—through different means. Unfortunately, they don't work together.
+
+## Do I need GPS? Do I have to share my location?
+
+No, it's entirely optional. Some devices have GPS built in, or you can share your location using your phone's GPS.
+
+## Can I send pictures, make calls, or get internet access?
+
+No. Meshtastic is for low-bandwidth applications like text messages, location sharing, and sensors (think weather stations). It isn't fast enough for pictures, voice, or internet access. Your old AOL dial-up was faster than Meshtastic.
 
 ## How far will my node reach?
 
-No product listing can tell you how far your node will reach. A clear path from an elevated site can reach much farther than two radios separated by buildings or a ridge. Mesh relays help only when a chain of nodes has compatible settings and working radio paths.
+LoRa doesn't like “stuff” in the way. Clear air from mountaintop to mountaintop? A hundred miles is possible. Downtown San Francisco? A few blocks. Think a couple of miles as a rough everyday expectation, depending on how much stuff is in the way.
 
-Test the routes you care about. Improve placement before buying more equipment, and ask nearby members what works in your area.
+## Why can I hear a node that can't hear me?
+
+Radios have sensitive receivers, but they don't all have the same transmit power. A **100 mW radio indoors may hear a 1 W mountaintop node without being able to reach it back**. Antennas, receiver sensitivity, buildings, and noise also affect the two directions. Try a clearer location and ask for a reply. Our [troubleshooting guide]({{< ref "/docs/troubleshooting" >}}) explains this in more detail.
 
 ## It works outside, but not inside my house. What can I do?
 
-A second node in a higher, clearer location can relay messages to your indoor or portable node. Use **Client Base** for the home node and consider **Client Mute** for an additional nearby handheld, following our [role recommendations]({{< ref "/docs/getting-started/recommended-settings" >}}).
+Again, LoRa doesn't like stuff in the way. A second, higher node with fewer obstacles can work much better, relaying messages to your indoor or portable node. Use **Client Base** for the home node and consider **Client Mute** for an additional nearby handheld, following our [role recommendations]({{< ref "/docs/getting-started/recommended-settings" >}}).
 
-While connected to the home node, mark your indoor or portable nodes as favorites. **Client Base** prioritizes relaying traffic to and from those nodes and handles other traffic like a regular Client. Review the [device-role documentation](https://meshtastic.org/docs/configuration/radio/device/#roles) for details. Keep outdoor equipment appropriately enclosed and powered.
+While connected to the home node, mark your indoor or portable nodes as favorites. **Client Base** prioritizes relaying traffic to and from those nodes and handles other traffic like a regular Client. Review the [device-role documentation](https://meshtastic.org/docs/configuration/radio/device/#roles) for details. Keep outdoor equipment appropriately enclosed and powered. Follow our [home base station guide]({{< ref "/docs/home-base-station" >}}) to set up and test the pair.
 
-## Should I use Router mode or increase the hop limit?
+## Should I use Router mode?
 
-Most people should use **Client** or **Client Mute**. Client already relays traffic; Router is not a range-boost switch. Infrastructure roles need careful placement and coordination with the local community.
-
-A higher hop limit cannot fix a missing first radio link. It allows a packet to travel through more relays and can add traffic. Start with the [BayMesh recommendations]({{< ref "/docs/getting-started/recommended-settings" >}}) and troubleshoot placement before changing them.
+No. Stick with the default **Client** role. It already relays messages.
 
 ## Why does Discord show messages that my radio never receives?
 
@@ -63,7 +69,7 @@ The logger collects messages uploaded by gateways across a much larger area than
 
 Public maps depend on nodes sharing positions and that data reaching the map service, often through MQTT. A node may be active without publishing its location. Conversely, a map entry or your app's node list may contain old information.
 
-Check when a node was last heard and whether it was heard over radio or via MQTT. Seeing a distant node in the list does not prove you can reach it now.
+Check when a node was last heard and whether it was heard over radio or via MQTT. Seeing a distant node in the list does not prove you can reach it now. [Map & Data]({{< ref "/map" >}}) explains timestamps, missing dots, and how to test coverage.
 
 ## Are my messages and location private?
 
@@ -77,9 +83,21 @@ Use the current **Beta** release recommended for your exact device unless you ar
 
 After a reflash or reset, you may need to forget the old Bluetooth pairing in your phone's settings and pair again. Check the device-specific instructions if pairing still fails. Firmware updates do not travel over the LoRa mesh. See the [official firmware FAQ](https://meshtastic.org/docs/faq/#firmware).
 
+## Will messages wait for me if my phone or radio is off?
+
+A powered radio can keep working when your phone disconnects. It has a limited buffer for messages to pass to the app later; it isn't a permanent inbox, and you shouldn't assume it will retain everything. If the radio itself is off, it cannot receive messages. Don't expect the public mesh to replay everything you missed. See the [Meshtastic overview](https://meshtastic.org/docs/overview/).
+
+## Why do messages sometimes take a while?
+
+Nodes share limited radio airtime. Relaying, retries, and a busy channel can delay messages. Wait before repeating a test, and ask for a written reply when delivery matters. If delays persist, check your link and your nodes' broadcast intervals using [Troubleshooting]({{< ref "/docs/troubleshooting" >}}).
+
+## How long will the battery last? Can I leave a node plugged in?
+
+Battery life depends on the radio, battery size, GPS, screen, Wi-Fi, traffic, and weather. Test your actual setup instead of planning around a best-case product claim. For continuous power, follow the manufacturer's charging and temperature guidance and use a suitable power supply. Some power banks turn off when a small radio draws too little current. Our [home base station guide]({{< ref "/docs/home-base-station" >}}) covers placement and power for a node you leave running.
+
 ## Can I rely on Meshtastic in an emergency?
 
-It can be another way to reach people, provided your radios are charged and there is a working radio path. Practice from real locations, agree on check-in times, and keep another communication plan. Neither the public mesh nor a private channel guarantees delivery or connects you to emergency services. See [Emergency and Private Use]({{< ref "/docs/emergency-private-use" >}}).
+It can be another way to reach people, provided your radios are charged and there is a working radio path. Practice from real locations, agree on check-in times, and keep another communication plan. Neither the public mesh nor a private channel guarantees delivery or connects you to emergency services. See [Emergency Preparedness]({{< ref "/docs/emergency-preparedness" >}}).
 
 ## Where can I get help or find people to test with?
 

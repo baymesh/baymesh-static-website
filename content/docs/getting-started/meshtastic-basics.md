@@ -14,7 +14,7 @@ Meshtastic firmware handles radio communication and message routing. The Android
 
 ## Channels and privacy
 
-A channel gives a group shared settings for exchanging messages. Channels can use encryption, but the default public channel uses a key known to everyone. For a private group, generate a random key and share it only with members. See [Emergency and Private Use]({{< ref "/docs/emergency-private-use" >}}) for setup and location-sharing guidance.
+A channel gives a group shared settings for exchanging messages. Channels can use encryption, but the default public channel uses a key known to everyone. For a private group, generate a random key and share it only with members. See [Private Channels and Groups]({{< ref "/docs/emergency-private-use" >}}) for setup and location-sharing guidance.
 
 ## Where to start
 

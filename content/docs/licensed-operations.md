@@ -32,4 +32,4 @@ Check the antenna, feed line, power supply, cooling, and RF-exposure requirement
 
 Disable Licensed Operator and restore the public mesh's [recommended settings]({{< ref "/docs/getting-started/recommended-settings" >}}), including the primary channel name and key, US region, Medium Fast preset, and slot 45. Restore suitable transmit-power settings, including any hardware power jumpers, before transmitting. Confirm you can exchange messages with another BayMesh node.
 
-For private family or neighborhood messaging, use the regular encrypted mode described in [Emergency and Private Use]({{< ref "/docs/emergency-private-use" >}}).
+For private family or neighborhood messaging, use the regular encrypted mode described in [Private Channels and Groups]({{< ref "/docs/emergency-private-use" >}}).

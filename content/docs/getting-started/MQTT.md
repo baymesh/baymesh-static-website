@@ -23,9 +23,6 @@ To use MQTT, configure the following settings:
     * Username: `meshdev`
     * Password: `large4cats`
     * [Encryption Enabled](https://meshtastic.org/docs/configuration/module/mqtt/#encryption-enabled): **Enabled**
-    * [JSON Enabled](https://meshtastic.org/docs/configuration/module/mqtt/#json-enabled): **Enabled**
-        * This works on ESP32 devices, but not RAK devices.
-        * It has limited use and is not needed by the logger or Meshview.
     * TLS Enabled: **Optional**
         * TLS is supported if you want to use it.
     * Root Topic: `msh/US/bayarea`

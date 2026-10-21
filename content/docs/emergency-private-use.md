@@ -1,6 +1,6 @@
 ---
-title: Emergency and Private Use
-description: Set up a private group and practice communicating without cellular service
+title: Private Channels and Groups
+description: Choose between private conversations on BayMesh and a separate radio mesh
 weight: 40
 tags: [Emergency, Privacy]
 ---
@@ -35,9 +35,6 @@ For a radio-only group, disable MQTT and channel uplinks/downlinks on your nodes
 
 ## Practice before an outage
 
-- Test from the places people will actually use their radios: home, work, meeting points, and likely travel routes. Hills and buildings can break the path between nearby addresses.
-- Agree on check-in times, short message formats, and a meeting plan if no reply arrives. Ask for a written reply when confirmation matters.
-- Keep radios and phones charged, with suitable spare power and charging cables. Test the app with cellular data and Wi-Fi off and Bluetooth on.
-- Save the setup instructions and private channel QR code somewhere your group can access offline. Practice restoring a spare radio.
+A private key controls who can read your group messages; it doesn't improve coverage or guarantee delivery. Test messages in both directions from the places you will actually use your radios.
 
-BayMesh is a volunteer network, and coverage, power, and message delivery can change during an outage. Meshtastic does not contact 911 or a monitored rescue service; use it as one part of your communication plan.
+For a household check-in plan, example messages, a charging checklist, and a practice drill, continue to [Emergency Preparedness]({{< ref "/docs/emergency-preparedness" >}}).

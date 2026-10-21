@@ -1,0 +1,44 @@
+// Keep documentation tables the full width of the article, including short ones.
+.td-content table:not(.td-initial) {
+  display: table;
+  width: 100%;
+  max-width: 100%;
+  table-layout: fixed;
+  overflow-wrap: anywhere;
+}
+
+.td-content .phone-setup-table th:first-child {
+  width: 30%;
+}
+
+.td-content .connection-settings-table th {
+  width: 25%;
+
+  &:last-child {
+    width: 50%;
+  }
+}
+
+.td-content .hardware-image img {
+  width: auto;
+  max-width: min(100%, 24rem);
+  max-height: 18rem;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .td-content .hardware-image {
+    float: right;
+    width: 34%;
+    margin: 0 0 1rem 1.5rem;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.td-content .hardware-image ~ h2,
+.td-content .hardware-image ~ h3 {
+  clear: both;
+}
