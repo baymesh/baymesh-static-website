@@ -1,6 +1,4 @@
-<!-- Privacy-friendly analytics by Plausible -->
-<script async src="https://plausible.io/js/pa-ZXqlyR1vra1P7E9GyqN-n.js"></script>
-<script>
-  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-  plausible.init({endpoint:'/m/e'})
-</script>
+{{- /* Privacy-friendly analytics by Plausible: tracker bundled first-party, events proxied at /m/e (src/worker.ts). */ -}}
+{{ with resources.Get "js/bm.js" | js.Build (dict "minify" true "targetPath" "js/bm.js") | fingerprint }}
+<script defer src="{{ .RelPermalink }}"></script>
+{{ end }}

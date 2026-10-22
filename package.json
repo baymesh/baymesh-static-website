@@ -42,5 +42,8 @@
   },
   "workspaces": [
     "packages/hugoautogen"
-  ]
+  ],
+  "dependencies": {
+    "@plausible-analytics/tracker": "0.4.6"
+  }
 }
