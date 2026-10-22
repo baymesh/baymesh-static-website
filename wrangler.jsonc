@@ -5,7 +5,10 @@
   "name": "baymesh-website",
   "compatibility_date": "2026-10-01",
   "main": "src/worker.ts",
-  "routes": [{ "pattern": "bayme.sh", "custom_domain": true }],
+  "routes": [
+    { "pattern": "bayme.sh", "custom_domain": true },
+    { "pattern": "www.bayme.sh", "custom_domain": true }
+  ],
   "assets": {
     "directory": "./public",
     "not_found_handling": "404-page",
