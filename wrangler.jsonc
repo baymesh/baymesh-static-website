@@ -1,0 +1,15 @@
+// Serves the Hugo build output as static assets. The Worker script (src/worker.ts) runs only for the
+// analytics proxy path; every other request goes straight to assets.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "baymesh-website",
+  "compatibility_date": "2026-10-01",
+  "main": "src/worker.ts",
+  "routes": [{ "pattern": "bayme.sh", "custom_domain": true }],
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash",
+    "run_worker_first": ["/m/e"]
+  }
+}
