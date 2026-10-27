@@ -14,8 +14,9 @@ This list is not exhaustive; other public channels may exist. Share additions or
 
 | Channel | Key type | PSK | Notes |
 | --- | --- | --- | --- |
-| **MediumFast** | 8-bit | `AQ==` | **Default public channel** |
-| NoBots | 8-bit | `NQ==` | |
+| **MediumFast** | 8-bit | `AQ==` | **Default public channel.** Please move bots to the Bots channel |
+| Bots | 8-bit | `BQ==` | Channel for your bots |
+| NoBots | 8-bit | `NQ==` | Bots forbidden |
 | Ham | 8-bit | `CQ==` | |
 | MeshQuake | 8-bit | `EQ==` | |
 | BayMeshNews | 8-bit | `5g==` | |
